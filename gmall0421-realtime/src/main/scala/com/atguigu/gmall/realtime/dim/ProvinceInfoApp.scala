@@ -14,7 +14,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 /**
  * @ClassName: ProvinceInfo
- * @Description: TODO 熊kafka里面读取省份信息保存hbase
+ * @Description: TODO 从kafka里面读取省份信息保存hbase
  * @Author: VmPerson
  * @Date: 2020/9/18  19:42
  * @Version: 1.0

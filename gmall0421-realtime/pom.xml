@@ -82,7 +82,7 @@
             <artifactId>elasticsearch</artifactId>
             <version>6.6.0</version>
         </dependency>
-
+        <!--连接Phoenix-->
         <dependency>
             <groupId>org.apache.phoenix</groupId>
             <artifactId>phoenix-spark</artifactId>

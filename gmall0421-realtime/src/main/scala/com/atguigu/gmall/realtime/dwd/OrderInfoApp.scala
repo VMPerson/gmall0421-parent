@@ -150,7 +150,7 @@ object OrderInfoApp {
     })
 
 
-    //关联用户表 因为用户数据量有点大 ，所以采用 关闭变量的方式不合适
+    //关联用户表 因为用户数据量有点大 ，所以采用广播变量的方式不合适
     val orderInfoDStreamWithProvinceWithUser: DStream[OrderInfo] = orderInfoDStreamWithProvince.mapPartitions(orderInfoItr => {
       val orderInfoList: List[OrderInfo] = orderInfoItr.toList
       val userIdList: List[Long] = orderInfoList.map(_.user_id)

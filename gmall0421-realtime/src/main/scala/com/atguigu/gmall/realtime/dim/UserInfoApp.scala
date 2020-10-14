@@ -53,7 +53,7 @@ object UserInfoApp {
       val birthday: String = userInfo.birthday
       val date: Date = format.parse(birthday)
       val mils: Long = System.currentTimeMillis() - date.getTime
-      val years: Long = mils / 1000L / 60L / 60L / 24L / 265L
+      val years: Long = mils / 1000L / 60L / 60L / 24L / 365L
       if (years < 20) {
         userInfo.age_group = "20岁及以下"
       } else if (years > 30) {
